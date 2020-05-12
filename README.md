@@ -1,21 +1,38 @@
 # MyList
 
-**TODO: Add description**
+Implement basic list operations.
 
-## Installation
+In functional languages list operations like `length`, `map`, and
+`reduce` are very common. Implement a series of basic list operations,
+without using existing functions.
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `my_list` to your list of dependencies in `mix.exs`:
+## Running tests
+
+Execute the tests with:
+
+```bash
+$ mix test
+```
+
+### Pending tests
+
+In the test suites, all but the first test have been skipped.
+
+Once you get a test passing, you can unskip the next one by
+commenting out the relevant `@tag :pending` with a `#` symbol.
+
+For example:
 
 ```elixir
-def deps do
-  [
-    {:my_list, "~> 0.1.0"}
-  ]
+# @tag :pending
+test "shouting" do
+  assert Bob.hey("WATCH OUT!") == "Whoa, chill out!"
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/my_list](https://hexdocs.pm/my_list).
+Or, you can enable all the tests by commenting out the
+`ExUnit.configure` line in the test suite.
 
+```elixir
+# ExUnit.configure exclude: :pending, trace: true
+```

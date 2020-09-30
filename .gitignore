@@ -23,3 +23,5 @@ erl_crash.dump
 my_list-*.tar
 
 /.elixir_ls/
+
+/.idea/

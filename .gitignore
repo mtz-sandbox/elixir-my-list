@@ -25,3 +25,4 @@ my_list-*.tar
 /.elixir_ls/
 
 /.idea/
+*.iml
